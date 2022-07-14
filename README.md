@@ -18,7 +18,7 @@ Update Google Sheet
 ![image](https://user-images.githubusercontent.com/95261974/178886350-d21a2d50-4367-41b3-8d66-6d6f7593118b.png)
 
 ## More
-[Credential.json](./updateGoogleSheet/Credential.json) added in [gradlew](./updateGoogleSheet/gradlew)
+[Credential.json](/updateGoogleSheet/Credential.json) added in [gradlew](/updateGoogleSheet/gradlew)
 
 
 
