@@ -12,4 +12,6 @@ Update Google Sheet
 ![image](https://user-images.githubusercontent.com/95261974/178887810-d159d8ef-9185-4b13-9f49-9365b791f1a1.png)
 
 ## More
-[Credential.json](/updateGoogleSheet/credentials.json) added in [gradlew](/updateGoogleSheet/gradlew)
+1. [Credential.json](/updateGoogleSheet/credentials.json) added in [gradlew](/updateGoogleSheet/gradlew)
+
+2. Main [SheetsQuickstart.java](updateGoogleSheet/src/main/java/SheetsQuickstart.java)
