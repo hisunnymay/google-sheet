@@ -7,7 +7,7 @@ Update Google Sheet
 2. In Intellj IDE, `./gradlew run` 
 
 ## Table
-Sample Table: https://docs.google.com/spreadsheets/d/10nehErITZaCFmQPKJpGQRieAbDs_r3Oiz44NP24Zz2Q/edit#gid=1169207060
+> https://docs.google.com/spreadsheets/d/10nehErITZaCFmQPKJpGQRieAbDs_r3Oiz44NP24Zz2Q/edit#gid=1169207060
 
 **Original Table**
 
