@@ -14,4 +14,4 @@ Update Google Sheet
 ## More
 1. [Credential.json](/updateGoogleSheet/credentials.json) added in [gradlew](/updateGoogleSheet/gradlew)
 
-2. Main [SheetsQuickstart.java](updateGoogleSheet/src/main/java/SheetsQuickstart.java)
+2. Main: [SheetsQuickstart.java](updateGoogleSheet/src/main/java/SheetsQuickstart.java)
