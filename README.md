@@ -15,3 +15,16 @@ Update Google Sheet
 1. [Credential.json](/updateGoogleSheet/credentials.json) added in [gradlew](/updateGoogleSheet/gradlew)
 
 2. Main: [SheetsQuickstart.java](updateGoogleSheet/src/main/java/SheetsQuickstart.java)
+
+3. 调用 SDK 的代码
+```
+service.spreadsheets().values()
+                    .update(spreadsheetId, range, body)
+                    .setValueInputOption(valueInputOption)
+                    .execute();
+                    
+service.spreadsheets().values()
+                    .append(spreadsheetId, range, body2)
+                    .setValueInputOption(valueInputOption)
+                    .execute();
+```
