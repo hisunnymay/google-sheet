@@ -79,7 +79,7 @@ public class SheetsQuickstart {
      * @param valueInputOption - Determines how input data should be interpreted.
      */
 
-    public static void appendValues(HttpRequestInitializer requestInitializer,
+    public static AppendValuesResponse appendValues(HttpRequestInitializer requestInitializer,
                                     String spreadsheetId,
                                     String range,
                                     List<List<Object>> values,
@@ -92,7 +92,7 @@ public class SheetsQuickstart {
                 .setApplicationName("Sheets samples")
                 .build();
 
-        AppendValuesResponse result;
+        AppendValuesResponse result = null;
 
 
         try {
@@ -135,7 +135,8 @@ public class SheetsQuickstart {
         update_values.add(list1);
 
         // Update sheet: replace B2 with "Test"
-        updateValues(requestInitializer, spreadsheetId,"'Test2'!B2:C3", update_values, valueInputOption);
+        UpdateValuesResponse res1 = updateValues(requestInitializer, spreadsheetId,"'Test2'!B2:C3", update_values, valueInputOption);
+        System.out.printf("\n // getUpdatedCells: " + "%o\n", res1.getUpdatedCells());
 
         // Append values
         String a = "3";
@@ -154,6 +155,7 @@ public class SheetsQuickstart {
         append_values.add(list2);
 
         // Update sheet: Append a row ["3", "Sunny", "/"]
-        appendValues(requestInitializer, spreadsheetId,"'Test2'!A:D", append_values, valueInputOption);
+        AppendValuesResponse res2 = appendValues(requestInitializer, spreadsheetId,"'Test2'!A:D", append_values, valueInputOption);
+        System.out.printf("\n// getUpdates().getUpdatedCells(): " + "%o\n", res2.getUpdates().getUpdatedCells());
     }
 }
